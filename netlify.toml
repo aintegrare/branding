@@ -1,0 +1,11 @@
+# Configurações de build para a Netlify
+[build]
+  # Comando para compilar o projeto
+  command = "next build"
+  # Diretório que será publicado
+  publish = ".next"
+
+# Plugin essencial da Netlify para Next.js
+# Este plugin garante que funcionalidades como SSR, ISR e Image Optimization funcionem corretamente.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
